@@ -29,7 +29,6 @@ build/
 out/
 mvnw
 mvnw.cmd
-!**/src/main/**  # Keep Java sources
 
 # Python (for python-microservices)
 __pycache__/
