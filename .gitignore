@@ -1,0 +1,77 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Git
+.git/
+
+# Node.js (for capjs-microservices and node-microservices)
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-lock.yaml
+package-lock.json
+
+# Java (for capjava-microservices and java-microservices)
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+.gradle/
+build/
+out/
+mvnw
+mvnw.cmd
+!**/src/main/**  # Keep Java sources
+
+# Python (for python-microservices)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+Pipfile.lock
+poetry.lock
+
+# C++ (for cpp-microservices)
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.a
+*.lib
+*.dSYM/
+cmake-build-debug/
+build/
+include/
+*.idx
+
+# SAP CAP (for capjava-microservices and capjs-microservices)
+gen/
+db/.hdi*
+node_modules/
+default-env.json
+*.hdbcds
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.code-workspace
+
+# Misc
+*.env
+.env.local
+.env.development
+.env.production
+.env.test
