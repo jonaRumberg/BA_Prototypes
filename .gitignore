@@ -53,8 +53,8 @@ poetry.lock
 *.dSYM/
 cmake-build-debug/
 build/
-include/
 *.idx
+include/
 
 # SAP CAP (for capjava-microservices and capjs-microservices)
 gen/
