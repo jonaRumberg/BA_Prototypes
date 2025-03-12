@@ -1,0 +1,4 @@
+USER_ID,DISCOUNT,DISCOUNT_TYPE
+1,0.10,Percentage
+2,0.05,Percentage
+3,0.10,Percentage

@@ -1,0 +1,7 @@
+---
+applications:
+- name: cpp-product
+  random-route: false
+  command: ./microservice
+  buildpacks:
+  - https://github.com/cloudfoundry/binary-buildpack.git

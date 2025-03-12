@@ -1,0 +1,6 @@
+---
+applications:
+- name: microservice
+  random-route: true
+  buildpacks:
+  - https://github.com/cloudfoundry/binary-buildpack.git
