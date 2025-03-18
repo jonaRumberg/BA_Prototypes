@@ -74,6 +74,7 @@ public class CartService implements EventHandler {
             if (cartResult.rowCount() == 0) {
                 throw new ServiceException("NO_DATA_FOUND", "Cart not found");
             }
+            
 
             Map<String, Object> cart = cartResult.single().as(Map.class);
             List<Map<String, Object>> cartItems = (List<Map<String, Object>>) cart.get("items");
