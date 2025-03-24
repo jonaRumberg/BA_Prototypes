@@ -1,0 +1,10 @@
+{
+  "cds": {
+    "requires": {
+      "Northwind_Service": {
+        "kind": "odata-v2",
+        "model": "srv/external/Northwind Service"
+      }
+    }
+  }
+}
