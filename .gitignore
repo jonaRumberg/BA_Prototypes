@@ -38,6 +38,7 @@ __pycache__/
 .venv/
 env/
 venv/
+cart-venv/
 Pipfile.lock
 poetry.lock
 

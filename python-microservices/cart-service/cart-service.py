@@ -1,12 +1,12 @@
 import os
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, json
 import requests
 import hdbcli.dbapi as hana
 
 # Environment and configuration
 PORT = int(os.environ.get('PORT', 3001))
-PRODUCT_SERVICE = "https://python-product.cfapps.us10-001.hana.ondemand.com"
-CHECKOUT_SERVICE = "https://python-checkout.cfapps.us10-001.hana.ondemand.com"
+PRODUCT_SERVICE = "https://cpp-product.cfapps.us10-001.hana.ondemand.com"
+CHECKOUT_SERVICE = "https://cpp-checkout.cfapps.us10-001.hana.ondemand.com"
 
 app = Flask(__name__)
 
@@ -49,7 +49,7 @@ def promise_exec_hana(statement, params=None, expect_result=True):
     try:
         conn = get_hana_connection()
         cursor = conn.cursor()
-        
+
         if params:
             cursor.execute(statement, params)
         else:
@@ -171,7 +171,8 @@ def add_item_to_cart(user, item):
     # Insert new item
     promise_exec_hana(
         "INSERT INTO cart_items VALUES (?, ?, ?, ?)", 
-        (user, item['id'], item['price'], item['name'].replace("'", ""))
+        (user, item['id'], item['price'], item['name'].replace("'", "")),
+        False
     )
     
     return get_cart(user)
@@ -216,6 +217,23 @@ def add_discount_to_cart(user, discount_type, discount_percentage):
     )
     
     return get_cart(user)
+
+def get_orders():
+    """
+    Retrieve all orders from the database.
+    
+    :return: List of all orders
+    """
+    try:
+        # Fetch all orders
+        orders_query = "SELECT * FROM orders ORDER BY CREATED_AT DESC"
+        orders = promise_exec_hana(orders_query)
+        
+        return orders
+    except Exception as e:
+        app.logger.error(f"Error retrieving orders: {e}")
+        raise
+
 
 def add_order(order):
     """
@@ -411,14 +429,19 @@ def create_order(user):
     
     try:
         # Call checkout service
-        checkout_response = requests.post(
-            f"{CHECKOUT_SERVICE}/api/checkout", 
-            json={
+
+        jsonstring = json.dumps({
                 'products': cart['items'],
                 'discount': {
                     'type': cart.get('DISCOUNT_TYPE'), 
                     'percentage': cart.get('DISCOUNT')
-                }
+                }})
+
+        checkout_response = requests.post(
+            f"{CHECKOUT_SERVICE}/api/checkout", 
+            data=jsonstring,
+            headers={
+                'Content-type': 'application/json',
             }
         )
         checkout_response.raise_for_status()
