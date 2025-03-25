@@ -102,9 +102,6 @@ public class CartController {
             return ResponseEntity.ok(order);
         } catch (Exception e) {
             // Log the exception
-            System.err.println("Error during order creation: " + e.getMessage());
-            e.printStackTrace();
-
             return ResponseEntity.status(500).body("Internal server error");
         }
     }
