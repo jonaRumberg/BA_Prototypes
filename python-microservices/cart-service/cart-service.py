@@ -207,13 +207,14 @@ def add_discount_to_cart(user, discount_type, discount_percentage):
     discount_res = promise_exec_hana(discount_query, (user,))
     
     if not discount_res:
-        promise_exec_hana("INSERT INTO cart VALUES (?, NULL, NULL)", (user,))
+        promise_exec_hana("INSERT INTO cart VALUES (?, NULL, NULL)", (user,), False)
         return empty_cart(user)
     
     # Update discount
     promise_exec_hana(
         "UPDATE cart SET DISCOUNT = ?, DISCOUNT_TYPE = ? WHERE USER_ID = ?", 
-        (discount_percentage, discount_type, user)
+        (discount_percentage, discount_type, user),
+        False
     )
     
     return get_cart(user)
