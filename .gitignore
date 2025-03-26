@@ -18,8 +18,6 @@ pnpm-lock.yaml
 package-lock.json
 
 # Java (for capjava-microservices and java-microservices)
-target/
-*.class
 *.jar
 *.war
 *.ear
