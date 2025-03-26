@@ -11,17 +11,15 @@ import com.sap.cds.services.handler.EventHandler;
 import com.sap.cds.services.handler.annotations.On;
 import com.sap.cds.services.handler.annotations.ServiceName;
 
-import cds.gen.northwind_service.NorthwindService_;
-
 @Component
-@ServiceName("Product")
+@ServiceName("ProductService")
 public class ProductService implements EventHandler {
     
     @Autowired
-    @Qualifier(NorthwindService_.CDS_NAME)
+    @Qualifier("Northwind_Service")
     CqnService productsService;
 
-    @On(event = "READ", entity = "Product.Products")
+    @On(event = "READ", entity = "ProductService.Products")
     public Result readNprod(CdsReadEventContext context) {
         System.out.println("Reading nprod");
 

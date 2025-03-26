@@ -1,7 +1,7 @@
 
 ---
 spring:
-  config.activate.on-profile: default
+  config.activate.on-profile: cloud
   sql.init.platform: h2
 cds:
   data-source.auto-config.enabled: false
@@ -9,21 +9,27 @@ cds:
     Northwind_Service:
       type: "odata-v2"
       model: "Northwind_Service"
+      http:
+        service: "/Northwind.svc"
       destination:
         properties:
-          url: https://services.odata.org/V2/Northwind/Northwind.svc/
+          url: https://services.odata.org/V2/Northwind/
           authentication: NoAuthentication
 ---
 management:
   endpoint:
     health:
       show-components: always
-      probes.enabled: true
+      probes:
+        enabled: true
   endpoints:
     web:
       exposure:
         include: health
   health:
-    defaults.enabled: false
-    ping.enabled: true
-    db.enabled: true
+    defaults:
+      enabled: false
+    ping:
+      enabled: true
+    db:
+      enabled: true
