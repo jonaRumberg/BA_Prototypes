@@ -1,0 +1,16 @@
+
+?__sonar_lambda_2$com.sap.cds.cds_services_archetype.CartService•
+Š/home/jona/BA_Protoypes/capjava-microservices/cart-service/java-cart/srv/src/main/java/com/sap/cds/cds_services_archetype/CartService.javaEB E(O"1*•
+1EG E(HÊÇ
+EG E(O+
+%12$com.sap.cds.ql.cqn.CqnSelectListItem"Jcom.sap.cds.ql.StructuredType#_all()Lcom/sap/cds/ql/cqn/CqnSelectListItem;*:
+
+__unknown_file (
+
+icds.gen.cart.CartItems_2_all()"9
+EG E(O-
++
+%12$com.sap.cds.ql.cqn.CqnSelectListItem:(
+EB E(C
+icds.gen.cart.CartItems_B
+java.util.function.Function

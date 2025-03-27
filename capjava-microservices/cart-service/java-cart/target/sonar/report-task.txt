@@ -1,0 +1,7 @@
+organization=jonarumberg
+projectKey=jonaRumberg_BA_Prototypes
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.61094
+dashboardUrl=https://sonarcloud.io/dashboard?id=jonaRumberg_BA_Prototypes
+ceTaskId=AZXWnR4W5j2SPPr8SySs
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZXWnR4W5j2SPPr8SySs

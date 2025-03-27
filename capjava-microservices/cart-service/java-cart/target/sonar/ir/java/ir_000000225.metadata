@@ -1,0 +1,19 @@
+com.sap.cds.cds_services_archetype.CartService#onCartDiscount(Lcds/gen/cart/CartDiscountContext;)V
+false
+d3b9407d748a24a4420b7473cb5dafe8
+cds.gen.cart.Cart#create()Lcds/gen/cart/Cart;
+com.sap.cds.ql.Update#entity(Ljava/lang/Class;)Lcom/sap/cds/ql/Update;
+==
+data com.sap.cds.ql.Update#data(Ljava/util/Map;)Lcom/sap/cds/ql/Update;
+get com.sap.cds.CdsData#get(Ljava/lang/Object;)Ljava/lang/Object;
+getCqn cds.gen.cart.CartDiscountContext#getCqn()Lcom/sap/cds/ql/cqn/CqnSelect;
+getPercentage cds.gen.cart.CartDiscountContext#getPercentage()Ljava/math/BigDecimal;
+getType cds.gen.cart.CartDiscountContext#getType()Ljava/lang/String;
+run com.sap.cds.services.cds.CqnService#run(Lcom/sap/cds/ql/cqn/CqnSelect;[Ljava/lang/Object;)Lcom/sap/cds/Result;
+run com.sap.cds.services.cds.CqnService#run(Lcom/sap/cds/ql/cqn/CqnUpdate;[Ljava/lang/Object;)Lcom/sap/cds/Result;
+setCompleted com.sap.cds.services.EventContext#setCompleted()V
+setDiscount cds.gen.cart.Cart#setDiscount(Ljava/math/BigDecimal;)V
+setDiscountType cds.gen.cart.Cart#setDiscountType(Ljava/lang/String;)V
+setResult cds.gen.cart.CartDiscountContext#setResult(Lcds/gen/cart/Cart;)V
+setUserId cds.gen.cart.Cart#setUserId(Ljava/lang/Integer;)V
+single com.sap.cds.Result#single()Lcom/sap/cds/Row;

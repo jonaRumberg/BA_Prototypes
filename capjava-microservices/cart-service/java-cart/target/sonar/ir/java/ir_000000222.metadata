@@ -1,0 +1,4 @@
+com.sap.cds.cds_services_archetype.CartServiceApplication#main([Ljava/lang/String;)V
+false
+9c6c5546ef7c94a6ef69f5a9fda4d48b
+org.springframework.boot.SpringApplication#run(Ljava/lang/Class;[Ljava/lang/String;)Lorg/springframework/context/ConfigurableApplicationContext;
