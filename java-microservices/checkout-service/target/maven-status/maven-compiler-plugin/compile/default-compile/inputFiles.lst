@@ -1,0 +1,6 @@
+/home/jona/BA_Protoypes/java-microservices/checkout-service/src/main/java/com/example/checkout/CheckoutApplication.java
+/home/jona/BA_Protoypes/java-microservices/checkout-service/src/main/java/com/example/checkout/controller/CheckoutController.java
+/home/jona/BA_Protoypes/java-microservices/checkout-service/src/main/java/com/example/checkout/model/CheckoutRequest.java
+/home/jona/BA_Protoypes/java-microservices/checkout-service/src/main/java/com/example/checkout/model/CheckoutResponse.java
+/home/jona/BA_Protoypes/java-microservices/checkout-service/src/main/java/com/example/checkout/model/Discount.java
+/home/jona/BA_Protoypes/java-microservices/checkout-service/src/main/java/com/example/checkout/model/Product.java

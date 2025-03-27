@@ -1,0 +1,4 @@
+com/example/productservice/model/Product.class
+com/example/productservice/controller/ProductController.class
+com/example/productservice/service/ProductService.class
+com/example/product_service/ProductServiceApplication.class
