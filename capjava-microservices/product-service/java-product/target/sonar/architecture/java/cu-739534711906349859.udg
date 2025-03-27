@@ -1,0 +1,258 @@
+
+1.0jonaRumberg_BA_PrototypesJavaFrontend"1742999086068*java2.B÷
+
+L
+Gsrv/src/main/java/com/sap/cds/cds_service_archetype/ProductService.java2
+
+package4
+&
+!com.sap.cds.cds_service_archetype5
+5
+0com.sap.cds.cds_service_archetype.ProductService7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+ProductService12
+/
+)com.sap.cds.services.handler.EventHandler14
+
+unknown15
+
+
+implements16
+.
+(org.springframework.stereotype.Component18
+
+annotated by19
+
+
+uses20
+:
+4com.sap.cds.services.handler.annotations.ServiceName22
+F
+@com.sap.cds.cds_service_archetype.ProductService.productsService24
+
+field25
+
+	protected26
+
+productsService27
+)
+#com.sap.cds.services.cds.CqnService29
+
+is type30
+<
+6org.springframework.beans.factory.annotation.Autowired32
+<
+6org.springframework.beans.factory.annotation.Qualifier34
+„
+~com.sap.cds.cds_service_archetype.ProductService#readNprod(Lcom/sap/cds/services/cds/CdsReadEventContext;)Lcom/sap/cds/Result;36
+
+method37
+
+	readNprod38
+
+com.sap.cds.Result40
+
+returns41
+2
+,com.sap.cds.services.cds.CdsReadEventContext43
+
+	has param44
+1
++com.sap.cds.services.handler.annotations.On46
+"
+com.sap.cds.ql.cqn.CqnSelect48
+
+
+references49
+Y
+Scom.sap.cds.services.cds.CdsReadEventContext#getCqn()Lcom/sap/cds/ql/cqn/CqnSelect;51
+
+calls52
+t
+ncom.sap.cds.services.cds.CqnService#run(Lcom/sap/cds/ql/cqn/CqnSelect;[Ljava/lang/Object;)Lcom/sap/cds/Result;54J
+
+1
+12Z
+
+3	
+354j¯
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12
+
+45
+454615
+@
+35:
+353637 *
+1 (26:3B
+	
+9
+10
+
+
+11
+38
+
+31
+313215
+
+47
+474815
+
+50
+505115
+
+28
+282915
+
+17
+171815
+@
+23:
+232425 *
+1 (26:3B
+	
+9
+26
+
+
+11
+27
+
+53
+535415
+
+33
+333415
+
+13
+131415
+
+21
+212215
+
+39
+394015
+
+42
+424315r
+
+61316*
+1( (4
+
+61719*
+1 (
+
+61720*
+1 (
+
+62119*
+1 (
+
+62120*
+1 (
+
+61320*
+1( (4
+
+232830*
+1 (
+
+233119*
+1 (
+
+233120*
+1 (
+
+233319*
+1 (
+
+233320*
+1 (
+
+232820*
+1 (
+
+232820*
+1 (
+
+353941*
+1 (
+
+354244*
+1 (0
+
+354519*
+1 (
+
+354520*
+1 (
+
+353920*
+1 (
+
+354230*
+11 (8
+
+354220*
+1 (0
+
+354741*
+1 (#
+
+354249*
+1 (#
+
+355052*
+1$ (*
+
+353930*
+1 (
+
+353920*
+1	 (
+
+353941*
+1 ("
+
+352849*
+1 ("
+
+355352*
+1# (&
+
+352349*
+1 ("
+
+352820*
+1 ("
+
+352349*
+1 ("
+
+354741*
+1' (.
+
+354249*
+1' (.
+
+355052*
+1/ (5

@@ -1,0 +1,4 @@
+com.sap.cds.cds_service_archetype.ProductServiceApplication#main([Ljava/lang/String;)V
+false
+380218af90ba3b8e4070ca3f8893b8df
+org.springframework.boot.SpringApplication#run(Ljava/lang/Class;[Ljava/lang/String;)Lorg/springframework/context/ConfigurableApplicationContext;

@@ -1,0 +1,113 @@
+
+~com.sap.cds.cds_service_archetype.ProductService#readNprod(Lcom/sap/cds/services/cds/CdsReadEventContext;)Lcom/sap/cds/Result;ù
+í/home/jona/BA_Protoypes/capjava-microservices/product-service/java-product/srv/src/main/java/com/sap/cds/cds_service_archetype/ProductService.java ("startingBlock*y
+2 (7e
+c
+ (7
+rescom.sap.cds.Result"__id*6
+
+__unknown_file (
+
+%7com.sap.cds.Result*
+1*ﬂ
+startingBlock (8ƒ
+¡
+ (;
+%12"
+__annotate*K
+
+__unknown_file (/-
++com.sap.cds.services.handler.annotations.On*U
+
+__unknown_file (9
+7
+context,com.sap.cds.services.cds.CdsReadEventContextx
+v
+0 (77
+context,com.sap.cds.services.cds.CdsReadEventContext"__annotation*#
+
+__unknown_file (
+
+%12*
+8*Ô
+6 (7⁄◊
+ (7
+%7com.sap.cds.Result"ncom.sap.cds.services.cds.CqnService#run(Lcom/sap/cds/ql/cqn/CqnSelect;[Ljava/lang/Object;)Lcom/sap/cds/Result;*G
+
+__unknown_file (+
+)
+%5#com.sap.cds.services.cds.CqnService*@
+
+__unknown_file ($
+"
+%6com.sap.cds.ql.cqn.CqnSelect26run(Lcom/sap/cds/ql/cqn/CqnSelect;[Ljava/lang/Object;)*
+2*§
+7 (!•
+¢
+ (!)
+%5#com.sap.cds.services.cds.CqnService"__id*e
+
+__unknown_file (I*G2
+0com.sap.cds.cds_service_archetype.ProductService"
+productsServiceÁ‰
+& (6"
+%6com.sap.cds.ql.cqn.CqnSelect"Scom.sap.cds.services.cds.CdsReadEventContext#getCqn()Lcom/sap/cds/ql/cqn/CqnSelect;*U
+
+__unknown_file (9
+7
+context,com.sap.cds.services.cds.CdsReadEventContext2getCqn()*
+6*Æ
+8 (Q
+O
+ (
+%0java.io.PrintStream"__id*"
+
+__unknown_file (
+""–Õ
+ (+
+
+%1void"0java.io.PrintStream#println(Ljava/lang/String;)V*7
+
+__unknown_file (
+
+%0java.io.PrintStream*-
+
+__unknown_file (
+Reading nprod2println(Ljava/lang/String;)Q
+O
+ (
+%2java.io.PrintStream"__id*"
+
+__unknown_file (
+""Á‰
+ (+"
+%3com.sap.cds.ql.cqn.CqnSelect"Scom.sap.cds.services.cds.CdsReadEventContext#getCqn()Lcom/sap/cds/ql/cqn/CqnSelect;*U
+
+__unknown_file (9
+7
+context,com.sap.cds.services.cds.CdsReadEventContext2getCqn()„‡
+ (,
+
+%4void"0java.io.PrintStream#println(Ljava/lang/Object;)V*7
+
+__unknown_file (
+
+%2java.io.PrintStream*@
+
+__unknown_file ($
+"
+%3com.sap.cds.ql.cqn.CqnSelect2println(Ljava/lang/Object;)Q
+O
+ (
+rescom.sap.cds.Result"__id*"
+
+__unknown_file (
+""*
+7*6
+1$ $("'
+$ $(
+
+rescom.sap.cds.Result:C
+ (77
+context,com.sap.cds.services.cds.CdsReadEventContextB42
+0com.sap.cds.cds_service_archetype.ProductServiceH`

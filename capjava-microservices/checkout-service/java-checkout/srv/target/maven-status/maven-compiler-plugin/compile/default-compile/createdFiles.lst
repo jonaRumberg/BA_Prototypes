@@ -1,0 +1,13 @@
+cds/gen/checkout/Checkout.class
+cds/gen/Discount_.class
+cds/gen/Product_.class
+cds/gen/Order.class
+cds/gen/Product.class
+cds/gen/checkout/Checkout$Remote.class
+com/sap/cds/cds_services_archetype/CheckoutService.class
+cds/gen/checkout/CheckoutContext.class
+cds/gen/checkout/Checkout$Application.class
+cds/gen/checkout/Checkout_.class
+cds/gen/Order_.class
+cds/gen/Discount.class
+com/sap/cds/cds_services_archetype/CheckoutServiceApplication.class
